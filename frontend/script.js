@@ -1,0 +1,1 @@
+document.getElementById("visitor-count").innerText = "Local test";
