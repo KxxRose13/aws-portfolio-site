@@ -1,114 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Kennon Rose | Cloud & Software Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header class="navbar">
-    <h1>Kennon Rose</h1>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1 class="site-name">Kennon Rose</h1>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <div>
-      <p class="tagline">Cloud Computing • Software Development • AWS</p>
-      <h2>Building practical cloud and software projects.</h2>
-      <p>
-        I’m a computer science student developing skills in AWS, Python, Java,
-        web development, and cloud infrastructure.
-      </p>
-      <a href="#projects" class="button">View Projects</a>
-    </div>
-  </section>
+  <main>
 
-  <section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <span>AWS S3</span>
-      <span>CloudFront</span>
-      <span>IAM</span>
-      <span>Python</span>
-      <span>Java</span>
-      <span>HTML/CSS</span>
-      <span>GitHub</span>
-      <span>Linux Basics</span>
-    </div>
-  </section>
+    <section class="hero" id="about">
+      <div class="cloud cloud-one"></div>
+      <div class="cloud cloud-two"></div>
+      <div class="cloud cloud-three"></div>
 
-  <section id="projects" class="section">
-    <h2>Portfolio Projects</h2>
+      <div class="container hero-grid">
 
-    <div class="project-grid">
+        <div class="hero-content">
+          <p class="hero-label">
+            AWS CLOUD & SOFTWARE DEVELOPMENT
+          </p>
 
-      <article class="project-card">
-        <h3>AWS Static Resume Site</h3>
+          <h2>
+            Building practical software and
+            <span>cloud infrastructure.</span>
+          </h2>
+
+          <p class="hero-description">
+            I am a computer science student developing hands-on experience
+            with AWS, Python, Java, Linux, networking, and modern cloud
+            architecture.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              View Projects
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://github.com/KxxRose13"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-portrait">
+          <svg
+            class="cloud-portrait"
+            viewBox="0 0 600 480"
+            role="img"
+            aria-labelledby="portrait-title"
+          >
+            <title id="portrait-title">
+              Portrait of Kennon Rose
+            </title>
+
+            <defs>
+              <clipPath id="cloudClip">
+                <path
+                  d="
+                    M150 397
+                    C83 397 45 357 45 307
+                    C45 261 76 225 121 215
+                    C126 148 181 99 248 99
+                    C289 99 326 118 350 149
+                    C371 124 404 109 440 109
+                    C500 109 549 158 549 218
+                    C549 226 548 234 546 241
+                    C581 258 600 290 600 326
+                    C600 370 564 397 517 397
+                    Z
+                  "
+                />
+              </clipPath>
+
+              <filter
+                id="cloudGlow"
+                x="-30%"
+                y="-30%"
+                width="160%"
+                height="160%"
+              >
+                <feGaussianBlur stdDeviation="9" result="blur" />
+
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+
+              <linearGradient
+                id="portraitShade"
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="1"
+              >
+                <stop
+                  offset="45%"
+                  stop-color="#020617"
+                  stop-opacity="0"
+                />
+
+                <stop
+                  offset="100%"
+                  stop-color="#020617"
+                  stop-opacity="0.45"
+                />
+              </linearGradient>
+            </defs>
+
+            <image
+              href="KR_portrait.png"
+              x="-55"
+              y="55"
+              width="650"
+              height="670"
+              preserveAspectRatio="xMidYMid slice"
+              clip-path="url(#cloudClip)"
+            />
+
+            <path
+              class="portrait-shade"
+              fill="url(#portraitShade)"
+              d="
+                M150 397
+                C83 397 45 357 45 307
+                C45 261 76 225 121 215
+                C126 148 181 99 248 99
+                C289 99 326 118 350 149
+                C371 124 404 109 440 109
+                C500 109 549 158 549 218
+                C549 226 548 234 546 241
+                C581 258 600 290 600 326
+                C600 370 564 397 517 397
+                Z
+              "
+            />
+
+            <path
+              class="cloud-outline cloud-outline-glow"
+              d="
+                M150 397
+                C83 397 45 357 45 307
+                C45 261 76 225 121 215
+                C126 148 181 99 248 99
+                C289 99 326 118 350 149
+                C371 124 404 109 440 109
+                C500 109 549 158 549 218
+                C549 226 548 234 546 241
+                C581 258 600 290 600 326
+                C600 370 564 397 517 397
+                Z
+              "
+            />
+
+            <path
+              class="cloud-outline cloud-outline-sharp"
+              d="
+                M150 397
+                C83 397 45 357 45 307
+                C45 261 76 225 121 215
+                C126 148 181 99 248 99
+                C289 99 326 118 350 149
+                C371 124 404 109 440 109
+                C500 109 549 158 549 218
+                C549 226 548 234 546 241
+                C581 258 600 290 600 326
+                C600 370 564 397 517 397
+                Z
+              "
+            />
+          </svg>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">Capabilities</p>
+          <h2>Technical Skills</h2>
+
+          <p>
+            Technologies I am currently using across cloud infrastructure
+            and software development projects.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <span>AWS S3</span>
+          <span>CloudFront</span>
+          <span>IAM</span>
+          <span>Python</span>
+          <span>Java</span>
+          <span>HTML/CSS</span>
+          <span>GitHub</span>
+          <span>Linux Basics</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">Portfolio</p>
+          <h2>Featured Projects</h2>
+
+          <p>
+            Cloud and software projects focused on practical implementation,
+            security, automation, and reliability.
+          </p>
+        </div>
+
+        <div class="project-grid">
+
+          <article class="project-card">
+            <h3>AWS Static Portfolio</h3>
+
+            <p>
+              A professional portfolio hosted through Amazon S3 and
+              distributed globally using CloudFront.
+            </p>
+
+            <div class="project-tags">
+              <span>Amazon S3</span>
+              <span>CloudFront</span>
+              <span>IAM</span>
+              <span>HTML/CSS</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#">Live Site</a>
+
+              <a
+                href="https://github.com/KxxRose13/aws-portfolio-site"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Cloud Resume Challenge</h3>
+
+            <p>
+              An upcoming serverless visitor counter and portfolio backend
+              using managed AWS services.
+            </p>
+
+            <div class="project-tags">
+              <span>Lambda</span>
+              <span>API Gateway</span>
+              <span>DynamoDB</span>
+              <span>Python</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#">Coming Soon</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Software Project</h3>
+
+            <p>
+              A future Java, Python, Android, or full-stack application
+              demonstrating object-oriented development.
+            </p>
+
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Python</span>
+              <span>GitHub</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#">Coming Soon</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section learning-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">Development</p>
+          <h2>Currently Learning</h2>
+        </div>
+
         <p>
-          Hosted a professional resume website using Amazon S3 and CloudFront,
-          configured for secure global content delivery.
+          I am currently building practical experience with AWS cloud
+          infrastructure, Linux, networking, software development,
+          and infrastructure automation.
         </p>
-        <ul>
-          <li>Amazon S3 static hosting</li>
-          <li>CloudFront distribution</li>
-          <li>Origin access control</li>
-        </ul>
-        <a href="#">View Project</a>
-      </article>
 
-      <article class="project-card">
-        <h3>Future AWS Project</h3>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">Connect</p>
+          <h2>Contact</h2>
+        </div>
+
         <p>
-          Placeholder for an upcoming cloud project such as a serverless app,
-          CI/CD deployment, or cloud monitoring dashboard.
+          GitHub:
+          <a
+            href="https://github.com/KxxRose13"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/KxxRose13
+          </a>
         </p>
-        <ul>
-          <li>AWS Lambda</li>
-          <li>API Gateway</li>
-          <li>DynamoDB</li>
-        </ul>
-        <a href="#">Coming Soon</a>
-      </article>
 
-      <article class="project-card">
-        <h3>Software Project</h3>
         <p>
-          Placeholder for a Java, Python, Android, or full-stack software project.
+          LinkedIn:
+          <a href="#">
+            Add LinkedIn profile
+          </a>
         </p>
-        <ul>
-          <li>Java / Python</li>
-          <li>Object-oriented design</li>
-          <li>GitHub version control</li>
-        </ul>
-        <a href="#">Coming Soon</a>
-      </article>
 
-    </div>
-  </section>
+        <p>
+          Email:
+          <a href="mailto:your-email@example.com">
+            your-email@example.com
+          </a>
+        </p>
 
-  <section class="section">
-    <h2>Currently Learning</h2>
-    <p>
-      I’m currently building hands-on experience with AWS cloud infrastructure,
-      Linux, networking basics, and software development fundamentals.
-    </p>
-  </section>
+      </div>
+    </section>
 
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>GitHub: <a href="#">your-github-link</a></p>
-    <p>LinkedIn: <a href="#">your-linkedin-link</a></p>
-    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-  </section>
+  </main>
 
   <footer>
-    <p>© 2026 Kennon Rose. Built with AWS S3 and CloudFront.</p>
+    <div class="container">
+      <p>
+        © 2026 Kennon Rose. Built with AWS S3 and CloudFront.
+      </p>
+    </div>
   </footer>
 
 </body>
