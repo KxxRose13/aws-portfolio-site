@@ -66,15 +66,21 @@
         </div>
 
         <div class="hero-portrait">
+          <div class="portrait-halo"></div>
+
+          <span class="data-particle particle-one"></span>
+          <span class="data-particle particle-two"></span>
+          <span class="data-particle particle-three"></span>
+          <span class="data-particle particle-four"></span>
+
           <svg
             class="cloud-portrait"
             viewBox="0 0 600 480"
+            xmlns="http://www.w3.org/2000/svg"
             role="img"
             aria-labelledby="portrait-title"
           >
-            <title id="portrait-title">
-              Portrait of Kennon Rose
-            </title>
+            <title id="portrait-title">Portrait of Kennon Rose</title>
 
             <defs>
               <clipPath id="cloudClip">
@@ -97,12 +103,12 @@
 
               <filter
                 id="cloudGlow"
-                x="-30%"
-                y="-30%"
-                width="160%"
-                height="160%"
+                x="-40%"
+                y="-40%"
+                width="180%"
+                height="180%"
               >
-                <feGaussianBlur stdDeviation="9" result="blur" />
+                <feGaussianBlur stdDeviation="10" result="blur" />
 
                 <feMerge>
                   <feMergeNode in="blur" />
@@ -118,7 +124,7 @@
                 y2="1"
               >
                 <stop
-                  offset="45%"
+                  offset="55%"
                   stop-color="#020617"
                   stop-opacity="0"
                 />
@@ -126,17 +132,17 @@
                 <stop
                   offset="100%"
                   stop-color="#020617"
-                  stop-opacity="0.45"
+                  stop-opacity="0.36"
                 />
               </linearGradient>
             </defs>
 
             <image
               href="KR_portrait.png"
-              x="-55"
-              y="55"
-              width="650"
-              height="670"
+              x="45"
+              y="99"
+              width="555"
+              height="298"
               preserveAspectRatio="xMidYMid slice"
               clip-path="url(#cloudClip)"
             />
@@ -372,7 +378,12 @@
         © 2026 Kennon Rose. Built with AWS S3 and CloudFront.
       </p>
     </div>
-  </footer>
+    <div class="visitor-counter">
+        <span class="visitor-label">Portfolio Visits</span>
+        <span id="visitor-count">Loading...</span>
+    </div>
+   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
